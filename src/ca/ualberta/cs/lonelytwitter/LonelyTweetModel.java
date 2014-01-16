@@ -5,7 +5,7 @@ import java.util.Date;
 // public - anywhere
 //        - pkg
 // protected - class+subclass
-// pivate - class
+// private - class
 
 public class LonelyTweetModel
 {
