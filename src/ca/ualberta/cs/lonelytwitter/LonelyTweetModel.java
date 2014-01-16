@@ -7,10 +7,20 @@ import java.util.Date;
 // protected - class+subclass
 // private - class
 
-public class LonelyTweetModel
-{
+public abstract class LonelyTweetModel{
     private String text;
     private Date timestamp;
+    
+    public LonelyTweetModel(String text){
+        super();
+        this.text = text;
+        this.timestamp = new Date();
+    }
+    public LonelyTweetModel(String text, Date timestamp){
+        super();
+        this.text = text;
+        this.timestamp = timestamp;
+    }
     
     public String getText(){
         return text;
@@ -18,9 +28,8 @@ public class LonelyTweetModel
     public void setText(String text){
         this.text = text;
     }
-    public Date getTimestamp(){
-        return timestamp; // or this.timestamp
-    }
+    public abstract Date getTimestamp();
+    
     public void setTimestamp(Date timestamp){
         this.timestamp = timestamp;
     }
