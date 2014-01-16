@@ -14,7 +14,7 @@ public class NormalTweetModel extends LonelyTweetModel{
     }
 
     @Override
-    public Boolean getPriority(){
+    public boolean isImportant(){
         return false;
     }
 
